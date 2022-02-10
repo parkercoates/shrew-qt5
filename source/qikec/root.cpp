@@ -202,8 +202,6 @@ void _qikecRoot::customEvent( QEvent * e )
 		PasswordEvent * event = ( PasswordEvent * ) e;
 		event->data->text = lineEditPassword->text();
 		event->data->result = 0;
-
-		lineEditPassword->clear();
 	}
 
 	if( e->type() == EVENT_FILEPASS )
