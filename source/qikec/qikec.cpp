@@ -79,12 +79,14 @@ bool _QIKEC::init( int argc, char ** argv, qikecRoot * setRoot )
 	{
 		username.add( "", 1 );
 		r->lineEditUsername->setText( username.text() );
+		r->lineEditPassword->setFocus();
 	}
 
 	if( password.size() )
 	{
 		password.add( "", 1 );
 		r->lineEditPassword->setText( password.text() );
+		r->pushButtonConnect->setFocus();
 	}
 
 	if( !user_credentials() )
